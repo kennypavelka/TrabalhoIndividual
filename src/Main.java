@@ -5,7 +5,7 @@ public class Main{
 
         Pedido pedido1 = new Pedido(1001, cliente1);
         pedido1.adicoinarItem(new ItemPedido("Teclado mecanido", 170.00, 1));
-        pedido1.adicoinarItem(new ItemPedido("Mouse Gamer", 80.00, 1);
+        pedido1.adicoinarItem(new ItemPedido("Mouse Gamer", 80.00, 1));
         pedido1.fecharPedido();
 
         System.out.println();
