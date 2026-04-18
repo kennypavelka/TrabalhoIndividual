@@ -14,7 +14,7 @@ public class Main{
         Pedido pedido2 = new Pedido(1002, cliente2);
 
         pedido2.adicoinarItem(new ItemPedido("Monitor 24 polegadas", 900.00, 1));
-        pedido2.adicoinarItem(new ItemPedido("Cadeira Gamer", 1200);
+        pedido2.adicoinarItem(new ItemPedido("Cadeira Gamer", 1200, 1));
         pedido2.fecharPedido();
 
 
