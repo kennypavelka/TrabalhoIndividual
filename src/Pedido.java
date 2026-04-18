@@ -17,5 +17,21 @@ public class Pedido{
                 itens.add(item);
             }
 
+public double calcularTotalItens() {
+        double total = 0;
+        for (ItemPedido item:itens)  {
+            total += item.getSubtotal();
 
+
+        }
+
+        return total;
+
+ }
+
+ public void fecharPedido(){
+        double totalItens = calcularTotalItens()
+
+
+ }
 }
