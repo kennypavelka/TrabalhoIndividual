@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 
-public class Pedido{
+public class Pedido {
 
     int numeroPedido;
     Cliente cliente;
     ArrayList<ItemPedido> itens;
-    double frete, totalFinal;
+    double frete;
+    double totalFinal;
 
     public Pedido(int numeroPedido, Cliente cliente) {
         this.numeroPedido = numeroPedido;
         this.cliente = cliente;
-        this.itens = new ArrayList<>();
-            }
+            this.itens = new ArrayList<>();
+                }
 
             public void adicoinarItem(ItemPedido item) {
                 itens.add(item);
@@ -30,12 +31,12 @@ public double calcularTotalItens() {
  }
 
  public void fecharPedido(){
-        double totalItens = calcularTotalItens()
+        double totalItens = calcularTotalItens();
 
 
-                if (totaItens > 250.00) {
+                if (totalItens > 250.00) {
 
-                    frete = 0:
+                    frete = 0;
                 } else {
                     frete = 25.00;
 
@@ -48,29 +49,25 @@ public double calcularTotalItens() {
      System.out.println("Pedido n: " +numeroPedido);
      System.out.println("Cliente: " + cliente.nome + " CPF : " + cliente.cpf);
      System.out.println(" =====--=======");
-     System.out.println("Itemns: ");
+     System.out.println("Items: ");
 
      for (ItemPedido item : itens) {
-         System.out.printlf(" %-20s x%d  R#$ %.2f%n", item.nomeProduto, item.quantidade, item.getSubtotal());
+         System.out.printf(" %-20s x%d  R$ %.2f%n", item.nomeProduto, item.quantidade, item.getSubtotal());
 
 
      }
 
      System.out.println(" -------------------");
-     System.out.printlf("Subtotal: R# %.2f%n", totalItens);
+     System.out.printf("Subtotal: R# %.2f%n", totalItens);
 
      if (frete ==0) {
          System.out.println("Frete:  Gratis");
      } else  {
          System.out.printf("Frete: R$ %.2f%n", frete);
 
-     }
-
-     System.out.printlf("Total :    R$ %.2f%n", totalFinal);
-
  }
 
- System.out.printlf("TOLtal:   R$ %.2f%n", totalFinal);
+ System.out.printf("TOLtal:   R$ %.2f%n" , totalFinal);
     System.out.println(" -----------");
 
-}
+}}
